@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encuesta de experiencia del Cliente</title>
+        <link rel="icon" href="img/logo-fondo.png" type="image/gif">
+        <!-- <link rel="stylesheet" href="normalize.css"> -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="Logo de la Barberia Valpir">
+                <h1 id="title">Encuesta para Nuestros Clientes</h1>
+                <p id="description">Por favor, tómate un minuto y haznos saber como lo estamos haciendo</p>
+            </header>
+            <form id="survey-form">
+                <fieldset>
+                    <label id="name-label" for="name">Nombre<input id="name" type="text" placeholder="Ingresa tu nombre" required></label>
+                    <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Ingresa tu Email" required></label>
+                    <label id="number-label" for="number">¿Cúantas veces en el mes usas los servicios de la Barbería Valpir?<input id="number" type="number" min="1" max="31" placeholder="Ingresa la cantidad de veces"></label>
+                </fieldset>
+                <fieldset>
+                    <p>¿Cúal de nuestros barberos es quién te atiende?</p>
+                    <select id="dropdown" name="dropdown">
+                        <option value="">Selecciona una opción</option>
+                        <option value="1">Randy Pirela</option>
+                        <option value="2">Jonathan Perozo</option>
+                        <option value="3">Darwin Valera</option>
+                        <option value="4">Jose Rodríguez</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <p>¿Cómo describirías tu experiencia?</p>
+                    <label for="experience"><input id="experience" type="radio" name="experience" value="excelente" checked> Excelente</label>
+                    <label for="experience"><input id="experience" type="radio" name="experience" value="regular"> Regular</label>
+                    <label for="experience"><input id="experience" type="radio" name="experience" value="no tan buena"> No tan buena</label>
+                </fieldset>
+                <fieldset>
+                    <p>¿Recomendarias la Barberia Valpir a tus amigos?</p>
+                    <label for="recomendation"><input id="recomendation" type="radio" name="recomendation" value="definitivamente" checked> Definitivamente</label>
+                    <label for="recomendation"><input id="recomendation" type="radio" name="recomendation" value="quizas"> Quizás</label>
+                    <label for="recomendation"><input id="recomendation" type="radio" name="recomendation" value="no estoy seguro/a"> No estoy seguro/a</label>
+                </fieldset>
+                <fieldset>
+                    <p>¿Cúal otros servicios te gustaría que ofrecieramos?</p>
+                    <label for="options"><input id="options" type="checkbox" name="options" value="masaje craneal"/> Masaje craneal</label>
+                    <label for="options"><input id="options" type="checkbox" name="options" value="exfoliación"/> Exfoliación</label>
+                    <label for="options"><input id="options" type="checkbox" name="options" value="arrejo de cejas con navaja"/> Arrejo de cejas con navaja</label>
+                    <label for="options"><input id="options" type="checkbox" name="options" value="mascarillas puntos negros"/> Mascarillas puntos negros</label>
+                    <label for="options"><input id="options" type="checkbox" name="options" value="trenzas"/> Trenzas</label>
+                </fieldset>
+                <fieldset>
+                    <p>¿Tienes algún otro comentario o sugerencia para nosotros?</p>
+                    <textarea id="comment" rows="8" placeholder="Escribelo acá"></textarea>
+                </fieldset>
+                <button id="submit">Enviar Formulario</button>
+            </form>
+        </main>
+    </body>
+</html>
