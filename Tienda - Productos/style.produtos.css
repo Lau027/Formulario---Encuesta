@@ -9,6 +9,12 @@
 
 /* HEADER */
 
+.caja_navegadores {
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
 /* CAJA RESERVA */
 
 .caja_reserva {
@@ -16,12 +22,11 @@
 	color: #f3f3f3;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 32px;
+	height: 2rem;
 	letter-spacing: 1px;
 }
 
@@ -38,10 +43,9 @@
 }
 
 .caja_reserva-link:hover {
-	font-weight: 900;
 	color: #ffffff;
 	border-color: #ffffff;
-	transition: 200ms;
+	transform: scale(1.01);
 }
 
 /* CAJA NAVEGADOR */
@@ -49,8 +53,8 @@
 /* LOGO */
 
 .logo {
-	margin-top: 0.3em;
-	height: 5rem;
+	margin-top: 0.5rem;
+	height: 5.5rem;
 }
 
 /* MENU PRINCIPAL */
@@ -58,9 +62,8 @@
 .caja_navegador {
 	background-color: #000;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
-	height: 6rem;
 }
 
 .menu_items {
@@ -93,7 +96,8 @@
 
 /* REDES SOCIALES */
 
-.redes_sociales {
+.redes_sociales,
+.container_redes_ingreso {
 	display: flex;
 	align-items: center;
 }
@@ -109,4 +113,156 @@
 .informacion {
 	color: #f3f3f3;
 	font-size: 0.8rem;
+	margin-right: 2rem;
+}
+
+/* BOTON LOGIN */
+
+/*** ESTILOS BOTÓN GROW BOX ***/
+.btn-login {
+	background: linear-gradient(to right, #c78c19, #f7c94b);
+	color: #f3f3f3;
+	border: none;
+	padding: 0.5rem 2rem;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.btn-login:hover {
+	color: #c78c19;
+	text-shadow: #000000 1px 0 1px;
+}
+.btn-login::after {
+	content: '';
+	background: linear-gradient(#f3f3f3, #f7c94b);
+	position: absolute;
+	z-index: -1;
+	padding: 0.5rem 2rem;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: scale(0, 0);
+	transition: all 0.3s ease;
+	border-radius: 10px;
+}
+.btn-login:hover::after {
+	transition: all 0.3s ease-out;
+	transform: scale(1, 1);
+	color: #c78c19;
+}
+
+/* BANNER */
+
+.banner {
+	height: 70vh;
+	width: 100vw;
+	padding-top: 130px;
+	background-image: url(../Imagenes/barberia-banner-mod.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.banner-titulo {
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	color: #f3f3f3;
+	text-shadow: #000000 2.5px 0 1px;
+}
+
+.banner-reserva {
+	color: #c78c19;
+	border-bottom: 1px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 2rem;
+}
+
+.banner-reserva:hover {
+	color: #ffffff;
+	border-color: #ffffff;
+	transform: scale(1.01);
+}
+
+/* FOOTER */
+
+footer {
+	width: 100vw;
+	background: url(../Imagenes/bg.jpg);
+}
+
+.caja_footer {
+	padding: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* LOGO FOOTER*/
+
+.logo-footer {
+	height: 10rem;
+}
+
+.logo-pagos {
+	height: 7rem;
+}
+
+/* MENU ENLACES FOOTER*/
+
+.menu_lista-footer,
+.informaciones_footer-titulo {
+	color: #c78c19;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.menu_link-footer,
+.informaciones_footer-descripcion {
+	color: #f3f3f3;
+	text-decoration: none;
+}
+
+.horario {
+	display: flex;
+	flex-direction: row;
+}
+.menu_link-footer:hover,
+.informaciones_footer-descripcion:hover {
+	text-decoration: underline;
+}
+
+i {
+	color: #c78c19;
+	margin-right: 0.5rem;
+}
+
+/* COPYRIGTH */
+
+hr {
+	width: 100%;
+	height: 0.2rem;
+	border: none;
+	background: linear-gradient(to right, #c78c19, #f7c94b, #f3f3f3);
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 0.8rem;
+	padding: 0.5rem;
+	text-align: center;
 }
