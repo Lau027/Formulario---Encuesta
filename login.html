@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Valpir Barbería | Login</title>
+		<link rel="icon" href="Imagenes/logo-fondo.png" type="image/gif" />
+		<link rel="stylesheet" href="css/global.css" />
+		<!-- CSS ENCABEZADO -->
+		<link rel="stylesheet" href="css/Encabezado/header.css" />
+		<link rel="stylesheet" href="css/Encabezado/reserva.navegador.css" />
+		<link rel="stylesheet" href="css/Encabezado/logo.navegador.css" />
+		<link rel="stylesheet" href="css/Encabezado/menu.navegador.css" />
+		<link rel="stylesheet" href="css/Encabezado/redes.sociales.navegador.css" />
+		<link rel="stylesheet" href="css/Encabezado/boton.login.css" />
+		<!-- CSS FOOTER -->
+		<link rel="stylesheet" href="css/Footer/footer.css" />
+		<link rel="stylesheet" href="css/Footer/logo.footer.css" />
+		<link rel="stylesheet" href="css/Footer/enlaces.footer.css" />
+		<link rel="stylesheet" href="css/Footer/copyrigth.css" />
+		<!--GOOGLE FONT JOST-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CSS LOGIN-->
+		<link rel="stylesheet" href="css/Login/login.css" />
+	</head>
+
+	<body>
+		<header class="caja_navegadores">
+			<div class="caja_reserva">
+				<p class="caja_reserva-descripcion">Bienvenidos a Barbería Valpir</p>
+				<a
+					class="caja_reserva-link"
+					href="https://booking.setmore.com/scheduleappointment/fbf05380-2e93-4595-a643-ca53db17470d/bookappointment"
+					target="_blank"
+					>Reserva aquí</a
+				>
+			</div>
+			<div class="caja_navegador">
+				<h1>
+					<a href="index.html">
+						<img
+							class="logo"
+							id="logo"
+							src="Imagenes/logo.png"
+							alt="Logo de la Barbería Valpir"
+						/>
+					</a>
+				</h1>
+				<nav>
+					<ul>
+						<li class="menu_items">
+							<a class="menu_link" href="index.html">Home</a>
+						</li>
+						<li class="menu_items">
+							<a class="menu_link" href="#">Servicios</a>
+						</li>
+						<li class="menu_items">
+							<a class="menu_link" href="productos.html">Productos</a>
+						</li>
+						<li class="menu_items">
+							<a class="menu_link" href="#">Galería</a>
+						</li>
+						<li class="menu_items">
+							<a class="menu_link" href="#">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="container_redes_ingreso">
+					<section class="redes_sociales">
+						<a href="https://wa.me/+56971033038" target="_blank">
+							<img
+								class="logo_whatsapp"
+								src="Imagenes/whatsapp.png"
+								alt="Logo Whatsapp"
+							/>
+						</a>
+						<div class="informacion">
+							<p>+569 7103 3038</p>
+							<p>Lun - Vie 08:00 hr - 17:00 hr</p>
+						</div>
+					</section>
+				</div>
+			</div>
+		</header>
+		<main class="contenedor">
+			<h1 class="titulo">Iniciar Sesión</h1>
+			<form class="form_login">
+				<fieldset>
+					<input
+						class="input_email"
+						type="email"
+						placeholder="Ingresa tu Email"
+						required
+					/>
+					<input
+						id="password"
+						class="input_password"
+						type="password"
+						placeholder="Ingresa tu Contraseña"
+						title="Mínimo 4 caracteres, al menos 1 letra y 1 número"
+						pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Z-a-z\d]{4,}$"
+						required
+					/>
+					<button class="btn-ingresar">Ingresar</button>
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<section class="caja_footer">
+				<a href="index.html">
+					<img
+						class="logo-footer"
+						id="logo"
+						src="Imagenes/logo.png"
+						alt="Logo de la Barbería Valpir"
+					/>
+				</a>
+				<nav>
+					<ul>
+						<p class="menu_lista-footer">Enlaces permanentes</p>
+						<li class="menu_items-footer">
+							<a class="menu_link-footer" href="index.html">Home</a>
+						</li>
+						<li class="menu_items-footer">
+							<a class="menu_link-footer" href="#">Servicios</a>
+						</li>
+						<li class="menu_items-footer">
+							<a class="menu_link-footer" href="productos.html">Productos</a>
+						</li>
+						<li class="menu_items-footer">
+							<a class="menu_link-footer" href="#">Galería</a>
+						</li>
+						<li class="menu_items-footer">
+							<a class="menu_link-footer" href="#">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+				<section class="caja_pagos">
+					<p class="informaciones_footer-titulo">Formas de pago</p>
+					<img
+						class="logo-pagos"
+						src="Imagenes/webpay.png"
+						alt="formas de pago"
+					/>
+				</section>
+				<section>
+					<p class="informaciones_footer-titulo">Contáctenos</p>
+					<div>
+						<i class="fa-solid fa-mobile-button"></i>
+						<a
+							class="informaciones_footer-descripcion"
+							href="https://wa.me/+56971033038"
+							target="_blank"
+							>+569 7103 3038</a
+						>
+					</div>
+					<div>
+						<i class="fa-solid fa-hashtag"></i>
+						<a
+							class="informaciones_footer-descripcion"
+							href="https://www.instagram.com/barberiavalpir/?hl=es"
+							target="_blank"
+							>@barberiavalpir</a
+						>
+					</div>
+					<div>
+						<i class="fa-solid fa-envelope"></i>
+						<a
+							class="informaciones_footer-descripcion"
+							href="mailto:valpir@barberia.cl"
+							target="_blank"
+							>valpir@barberia.cl</a
+						>
+					</div>
+					<div>
+						<i class="fa-solid fa-location-dot"></i>
+						<a
+							class="informaciones_footer-descripcion"
+							href="https://www.google.com/maps/place/Barberia+Valpir/@-33.4215581,-70.6115474,17z/data=!3m1!4b1!4m6!3m5!1s0x9662cf3544d60a67:0x47c0738424e4cf9b!8m2!3d-33.4215626!4d-70.6089725!16s%2Fg%2F11rv5g9lwh?entry=ttu"
+							target="_blank"
+							>Paseo Las Palmas 2230 Local C44, Providencia</a
+						>
+					</div>
+					<div class="horario">
+						<i class="fa-solid fa-calendar-days"></i>
+						<p class="informaciones_footer-descripcion">
+							Lun - Vie 08:00 hr - 17:00 hr
+						</p>
+					</div>
+				</section>
+			</section>
+			<hr />
+			<p class="copyright">&copy Copyright Valpir Barbería - 2020</p>
+		</footer>
+	</body>
+	<script
+		src="https://kit.fontawesome.com/3ce3832ce3.js"
+		crossorigin="anonymous"
+	></script>
+</html>

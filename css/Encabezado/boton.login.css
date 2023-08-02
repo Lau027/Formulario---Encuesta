@@ -1,0 +1,37 @@
+.btn-login {
+	background: linear-gradient(to right, #c78c19, #f7c94b);
+	color: #f3f3f3;
+	border: none;
+	padding: 0.5rem 2rem;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.btn-login:hover {
+	color: #c78c19;
+	text-shadow: #000000 1px 0 1px;
+}
+.btn-login::after {
+	content: '';
+	background: linear-gradient(#f3f3f3, #f7c94b);
+	position: absolute;
+	z-index: -1;
+	padding: 0.5rem 2rem;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: scale(0, 0);
+	transition: all 0.3s ease;
+	border-radius: 10px;
+}
+.btn-login:hover::after {
+	transition: all 0.3s ease-out;
+	transform: scale(1, 1);
+	color: #c78c19;
+}

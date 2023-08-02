@@ -1,0 +1,145 @@
+.contenedor {
+	padding-top: 4rem;
+	background-image: linear-gradient(
+			rgba(75, 75, 77, 0.8),
+			rgba(222, 222, 252, 0.7)
+		),
+		url(../../Imagenes/barba.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 50rem;
+}
+
+.titulo {
+	font-size: 2em;
+	text-align: center;
+	text-shadow: #000000 2.5px 0 1px;
+	font-weight: 900;
+	color: #f3f3f3;
+}
+
+/* FORMULARIO */
+
+.form_agregar-producto {
+	background-color: rgba(19, 18, 18, 0.7);
+	border-radius: 10px;
+	width: 35rem;
+	height: 30rem;
+	padding: 3rem 5rem;
+	border: none;
+	display: flex;
+	margin-top: 1rem;
+}
+
+fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.input_archivo,
+.input_nombre,
+.input_numero,
+.btn-agregar {
+	font-weight: 600;
+	width: 100%;
+	font-family: 'Jost', sans-serif;
+	border-radius: 5px;
+	padding: 0.5rem;
+	border-color: #f9bc28;
+	outline: none;
+	font-size: 1em;
+}
+
+::placeholder {
+	color: #000000;
+	padding: 1.25rem 0;
+}
+
+/* BOTON INGRESAR */
+.btn-agregar {
+	background-color: #37af65;
+	border-color: #37af65;
+	width: 80%;
+	cursor: pointer;
+	color: #f3f3f3;
+	padding: 0.6rem 3rem;
+	font-weight: 800;
+}
+
+/* ARCHIVO */
+
+.inputfile {
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+	font-size: 1.25em;
+	padding: 0.5rem;
+	width: 100%;
+	font-family: 'Jost', sans-serif;
+	font-weight: 600;
+	color: #f9bc28;
+	background-color: #f3f3f3;
+	border-radius: 5px;
+	outline: none;
+	text-shadow: #000000 1px 0 0.5px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+	background-color: #f9bc28;
+	color: #f3f3f3;
+}
+
+/* BOTON ADMINISTRADOR */
+
+.btn-administrador {
+	background: linear-gradient(to right, #c78c19, #f7c94b);
+	color: #f3f3f3;
+	border: none;
+	padding: 0.5rem 2rem;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.btn-administrador:hover {
+	color: #c78c19;
+	text-shadow: #000000 1px 0 1px;
+}
+.btn-administrador::after {
+	content: '';
+	background: linear-gradient(#f3f3f3, #f7c94b);
+	position: absolute;
+	z-index: -1;
+	padding: 0.5rem 2rem;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transform: scale(0, 0);
+	transition: all 0.3s ease;
+	border-radius: 10px;
+}
+.btn-administrador:hover::after {
+	transition: all 0.3s ease-out;
+	transform: scale(1, 1);
+	color: #c78c19;
+}

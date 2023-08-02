@@ -1,0 +1,19 @@
+.redes_sociales,
+.container_redes_ingreso {
+	display: flex;
+	align-items: center;
+}
+
+.logo_whatsapp {
+	margin-right: 1rem;
+}
+
+.logo_whatsapp:hover {
+	transform: scale(1.1);
+}
+
+.informacion {
+	color: #f3f3f3;
+	font-size: 0.8rem;
+	margin-right: 2rem;
+}

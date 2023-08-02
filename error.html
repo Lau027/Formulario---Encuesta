@@ -3,16 +3,27 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Valpir Barbería | Tienda</title>
-		<link rel="icon" href="../Imagenes/logo-fondo.png" type="image/gif" />
-		<link rel="stylesheet" href="style.produtos.css" />
+		<title>Valpir Barbería</title>
+		<link rel="icon" href="Imagenes/logo-fondo.png" type="image/gif" />
+		<link rel="stylesheet" href="css/global.css" />
+		<!-- CSS ENCABEZADO -->
+		<link rel="stylesheet" href="css/Encabezado/header.css" />
+		<link rel="stylesheet" href="css/Encabezado/reserva.navegador.css"/>
+		<link rel="stylesheet" href="css/Encabezado/logo.navegador.css"/>
+		<link rel="stylesheet" href="css/Encabezado/menu.navegador.css"/>
+		<link rel="stylesheet" href="css/Encabezado/redes.sociales.navegador.css"/>
+		<link rel="stylesheet" href="css/Encabezado/boton.login.css"/>
+		<!-- CSS FOOTER -->
+		<link rel="stylesheet" href="css/Footer/footer.css" />
+		<link rel="stylesheet" href="css/Footer/logo.footer.css"/>
+		<link  rel="stylesheet" href="css/Footer/enlaces.footer.css"/>
+		<link rel="stylesheet" href="css/Footer/copyrigth.css" />
 		<!--GOOGLE FONT JOST-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+		<!-- CSS ERROR -->
+		<link rel="stylesheet" href="css/error.css" />
 	</head>
 	<body>
 		<header class="caja_navegadores">
@@ -27,11 +38,11 @@
 			</div>
 			<div class="caja_navegador">
 				<h1>
-					<a href="#">
+					<a href="index.html">
 						<img
 							class="logo"
 							id="logo"
-							src="../Imagenes/logo.png"
+							src="Imagenes/logo.png"
 							alt="Logo de la Barbería Valpir"
 						/>
 					</a>
@@ -39,13 +50,13 @@
 				<nav>
 					<ul>
 						<li class="menu_items">
-							<a class="menu_link" href="#">Home</a>
+							<a class="menu_link" href="index.html">Home</a>
 						</li>
 						<li class="menu_items">
 							<a class="menu_link" href="#">Servicios</a>
 						</li>
 						<li class="menu_items">
-							<a class="menu_link" href="#">Productos</a>
+							<a class="menu_link" href="productos.html">Productos</a>
 						</li>
 						<li class="menu_items">
 							<a class="menu_link" href="#">Galería</a>
@@ -60,7 +71,7 @@
 						<a href="https://wa.me/+56971033038" target="_blank">
 							<img
 								class="logo_whatsapp"
-								src="../Imagenes/whatsapp.png"
+								src="Imagenes/whatsapp.png"
 								alt="Logo Whatsapp"
 							/>
 						</a>
@@ -69,57 +80,24 @@
 							<p>Lun - Vie 08:00 hr - 17:00 hr</p>
 						</div>
 					</section>
-					<a href="#" class="btn-login">Ingresar</a>
 				</div>
 			</div>
 		</header>
-		<main>
-			<section class="banner">
-				<h1 class="banner-titulo">
-					Bienvenido a Barberia Valpir, ven y disfruta de un ambiente agradable
-					y 100%
-				</h1>
-				<a
-					class="banner-reserva"
-					href="https://booking.setmore.com/scheduleappointment/fbf05380-2e93-4595-a643-ca53db17470d/bookappointment"
-					target="_blank"
-					>Haz tu reserva aquí</a
-				>
-			</section>
-			<section class="caja_productos">
-				<div class="producto">
-                    <img src="" alt=""></img>
-                    <h2></h2>
-                    <p></p>
-                    <a href=""></a>
-                </div>
-				<div class="producto">
-                    <img src="" alt=""></img>
-                    <h2></h2>
-                    <p></p>
-                    <a href=""></a>
-                </div>
-				<div class="producto">
-                    <img src="" alt=""></img>
-                    <h2></h2>
-                    <p></p>
-                    <a href=""></a>
-                </div>
-				<div class="producto">
-                    <img src="" alt=""></img>
-                    <h2></h2>
-                    <p></p>
-                    <a href=""></a>
-                </div>
-			</section>
+		<main class="contenedor_error">
+			<im
+			<div class="caja_error">
+				<h2>Página no encontrada</h2>
+				<h3>No pudimos encontrar lo que estabas buscando</h3>
+				<a class="btn-regresar" href="index.html">Regresar al Home</a>
+			</div>
 		</main>
 		<footer>
 			<section class="caja_footer">
-				<a href="#">
+				<a href="index.html">
 					<img
 						class="logo-footer"
 						id="logo"
-						src="../Imagenes/logo.png"
+						src="Imagenes/logo.png"
 						alt="Logo de la Barbería Valpir"
 					/>
 				</a>
@@ -127,13 +105,13 @@
 					<ul>
 						<p class="menu_lista-footer">Enlaces permanentes</p>
 						<li class="menu_items-footer">
-							<a class="menu_link-footer" href="#">Home</a>
+							<a class="menu_link-footer" href="index.html">Home</a>
 						</li>
 						<li class="menu_items-footer">
 							<a class="menu_link-footer" href="#">Servicios</a>
 						</li>
 						<li class="menu_items-footer">
-							<a class="menu_link-footer" href="#">Productos</a>
+							<a class="menu_link-footer" href="productos.html">Productos</a>
 						</li>
 						<li class="menu_items-footer">
 							<a class="menu_link-footer" href="#">Galería</a>
@@ -147,7 +125,7 @@
 					<p class="informaciones_footer-titulo">Formas de pago</p>
 					<img
 						class="logo-pagos"
-						src="../Imagenes/webpay.png"
+						src="Imagenes/webpay.png"
 						alt="formas de pago"
 					/>
 				</section>

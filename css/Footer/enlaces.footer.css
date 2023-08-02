@@ -1,0 +1,27 @@
+.menu_lista-footer,
+.informaciones_footer-titulo {
+	color: #c78c19;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.menu_link-footer,
+.informaciones_footer-descripcion {
+	color: #f3f3f3;
+	text-decoration: none;
+}
+
+.horario {
+	display: flex;
+	flex-direction: row;
+}
+.menu_link-footer:hover,
+.informaciones_footer-descripcion:hover {
+	text-decoration: underline;
+}
+
+i {
+	color: #c78c19;
+	margin-right: 0.5rem;
+}

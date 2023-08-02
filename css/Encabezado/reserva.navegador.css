@@ -1,0 +1,30 @@
+.caja_reserva {
+	background-color: #c78c19;
+	color: #f3f3f3;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2rem;
+	letter-spacing: 1px;
+}
+
+.caja_reserva-descripcion {
+	margin-right: 0.75rem;
+}
+
+.caja_reserva-link {
+	color: #f3f3f3;
+	border-bottom: 1px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+	font-weight: 800;
+}
+
+.caja_reserva-link:hover {
+	color: #ffffff;
+	border-color: #ffffff;
+	transform: scale(1.01);
+}
